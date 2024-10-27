@@ -174,3 +174,43 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: center;
 }
+/* Navbar Styling for Mobile */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        color: white;
+        padding: 10px;
+    }
+
+    .btn-outline-success {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust search form placement on smaller screens */
+    .d-flex {
+        justify-content: center;
+        padding-top: 10px;
+    }
+}
+/* Welcome box styling for mobile devices */
+@media (max-width: 768px) {
+    .welcomebox {
+        padding: 20px; /* Reduced padding */
+        font-size: 1.5rem; /* Smaller font size */
+        width: 90%; /* Adjusted width */
+        
+    }
+
+    #welcomeheading {
+        font-size: 2rem; /* Smaller heading font */
+    }
+}
