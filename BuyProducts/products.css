@@ -280,3 +280,37 @@ h1{
   background-color: rgb(1, 9, 47);
   cursor: pointer;
 }
+#quantity span{
+  text-align: center;
+  width: 2rem;
+  
+}
+#quantity {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+/* Cart Logo */
+.cart-logo{
+  display: flex;
+  margin: 1rem 3rem 1rem 1rem;
+  flex-direction: row-reverse;
+  align-items: center;
+  
+}
+.cart-logo span{
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+}
+.dark .cart-logo span{
+  background-color: rgb(3, 41, 136);
+}
