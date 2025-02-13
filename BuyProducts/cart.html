@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Products</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="products.css">
+</head>
+<body>
+
+  <div id="background">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container d-flex justify-content-between align-items-lg-center">
+          <!-- <button id="btn-mode">dark-mode</button> -->
+          <div class="container">
+            <input type="checkbox" id="check">
+            <label for="check" class="button"></label>
+        </div>
+            <a class="navbar-brand" href="#">Crop Commerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-around">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../About us/AboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html">Buy Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+  
+  
+                  <a class="nav-link" href="#resources">Resources</a>
+                </li>
+                <li class="nav-item">
+                  <a href="login.html" style="text-decoration:None;"><button type="button" class="btn btn-outline-success">Login</button></a>
+  
+                </li>
+                  </ul>
+               
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <a href="cart.html">
+                <div class="cart">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg>
+                  <div id="cartAmount" class="cartAmount">0</div>
+                </div>
+              </a> 
+
+            </div>
+          </div>
+         
+    </nav>
+<div>
+
+<div id="label" class="text-center"></div>
+<div class="shopping-cart" id="shopping-cart"></div>
+
+</body>
+
+<script src="data.js"></script>
+<script src="cart.js"></script>
+
+</html>

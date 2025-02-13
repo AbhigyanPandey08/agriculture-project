@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /*background-color: rgb(5, 51, 20);
+            background: linear-gradient(315deg, #FF4D4D, #053314);*/
+            background-image: url("images/backgroundimage3.jpg");
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+
+
+        }
+    
+        .form-signin {
+          max-width: 500px;
+          height: 550px;
+          padding: 15px;
+          background-color: white; 
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+           
+        }
+      
+        .form-signin img {
+          border-radius: 50%;
+        }
+      
+        .form-floating {
+          margin-bottom: 15px;
+        }
+      
+        .form-signin h1 {
+          text-align: center;
+          font-weight: 700; 
+          color: #343a40; 
+        }
+      
+        .btn-primary {
+          background-color: #007bff;
+          border-color: #007bff;
+        }
+      
+        .btn-primary:hover {
+          background-color: #0056b3;
+          border-color: #004085;
+        }
+      
+        .form-check-label {
+          font-size: 14px; 
+        }
+      
+        .text-body-secondary {
+          font-size: 12px; 
+          color: #6c757d; 
+        }
+        .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 10px; 
+        }
+        #forgotpass:hover{
+          transition: color 0.5s ease;
+          color: red !important;
+        }
+        #signup:hover{
+          transition: color 0.5s ease;
+          color: red !important;          
+        }
+      </style>
+      
+
+</head>
+<body>
+    <main class="form-signin w-100 m-auto">
+        <form>
+          <img class="mb-4" src="images/premium_photo-1661962692059-55d5a4319814.jpg" alt="" width="72" height="57">
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+      
+          <div class="form-check text-start my-3">
+            <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Remember me
+            </label>
+          </div>
+          <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+          <p class="forgot-password">
+            <a href="#" class="text-body-secondary" id="forgotpass">Forgot Password?</a>
+           </p>
+           <p class="text-center mt-3">
+            Don't have an account? 
+            <a href="#" class="text-body-secondary" id="signup">SIGN UP NOW</a>
+          </p>
+        </form>
+      </main>
+</body>
+</html>
