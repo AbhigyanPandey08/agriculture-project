@@ -48,12 +48,13 @@ body{
         margin: 0;
     }
     .button{
+        margin-left: -150px;
         background-color: #d2d2d2;
-        width: 40px;
-        height: 20px;
+        width: 70px;
+        height: 10px;
         border-radius: 4rem;
         cursor: pointer;
-        position: relative;
+       
         transition: 0.2s;
     }
     .button::before{
@@ -360,7 +361,6 @@ h1{
   grid-template-columns: repeat(1,450px);
   justify-content: center;
   gap: 15px;
-
 
 }
 
