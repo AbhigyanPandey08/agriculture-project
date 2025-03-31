@@ -27,6 +27,7 @@ body {
     overflow-y: scroll;
 }
 .welcomebox{
+    margin-top: -10rem;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     justify-content: center;
@@ -168,34 +169,59 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: center;
 }
-/* Desktop */
-@media (min-width: 1024px) {
-    #welcomeheading {
-        font-size: 3rem;
-    }
-    #Contact h1 {
-        font-size: 2.5rem;
-    }
-}
 
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
+
+/* Tablet Screens (768px) */
+@media (max-width: 768px) {
     #welcomeheading {
-        font-size: 3rem;
-    }
-    #Contact h1 {
-        font-size: 2.2rem;
+        font-size: 2rem !important;
     }
     .welcomebox {
-        padding: 40px;
-        border-radius: 30px;
+        top: 100%; /* Adjusted position */
+        width: 50%; /* Make it more responsive */
+        font-size: 1rem !important; /* Reduce font size for better fit */
+        padding: 30px; /* Reduce padding */
+    }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    .nav-link {
+        font-size: 1rem;
+    }
+    #resources h1,
+    #Contact h1,
+    #FAQ h1 {
+        font-size: 2.5rem;
     }
     .card {
-        width: 20rem;
-        margin: 1rem auto;
+        width: 100% !important;  /* Make the card take full width */
+        max-width: 22rem !important; /* Limit max width for better readability */
+        margin: 1rem auto !important; /* Center the card properly */
+        padding: 1rem !important; /* Add padding */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) !important; /* Ensure consistent shadow */
+    }
+
+    .card:hover {
+        transform: translateY(-20px) !important; /* Adjust hover effect */
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3) !important; /* Enhance hover shadow */
+    }
+
+    .resourcesadjustments {
+        flex-direction: column !important; /* Stack cards vertically */
+        align-items: center !important; /* Center align cards */
     }
 }
-
+    .footer-title h2 {
+        font-size: 1.8rem;
+    }
+    .footer-icons p {
+        font-size: 1.2rem;
+    }
+    .quick-links ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
 /* Mobile */
 @media (max-width: 767px) {
     #welcomeheading {
@@ -251,6 +277,7 @@ button[type="submit"]:hover {
         font-size: 0.85rem;
     }
 }
+
 /* Footer Styling */
 
 
@@ -412,4 +439,34 @@ button[type="submit"]:hover {
       display: none;
     padding-bottom: 2rem;
     font-weight: bold;
+}
+
+/* Large Desktop Screens (1440px) */
+@media (max-width: 1440px) {
+    #welcomeheading {
+        font-size: 4rem;
+    }
+    .welcomebox {
+        margin-top: -25rem !important;
+        font-size: 2.5rem !important;
+        padding: 60px !important;
+        border-radius: 50px !important;
+    }
+    .navbar-brand {
+        font-size: 2.5rem;
+    }
+    #resources h1,
+    #Contact h1,
+    #FAQ h1 {
+        font-size: 3.2rem;
+    }
+    .card {
+        width: 25rem;
+    }
+    .footer-title h2 {
+        font-size: 2rem;
+    }
+    .footer-icons p {
+        font-size: 1.5rem;
+    }
 }
